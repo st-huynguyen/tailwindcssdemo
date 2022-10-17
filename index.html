@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS Demo</title>
+  </head>
+  <body>
+    <header class="pt-8">
+      <div
+        class="container flex items-center justify-center sm:justify-between"
+      >
+        <img src="/assets/images/logo.svg" alt="logo" class="h-10" />
+        <ul class="hidden items-center gap-8 sm:flex">
+          <li><a href="/">Login</a></li>
+          <li><a href="/" class="btn">Join the course</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-cols-1 items-center gap-20 md:grid-cols-2">
+          <div>
+            <h1 class="text-6xl font-bold tracking-tight lg:text-7xl">
+              The ultimate Frontend course.
+            </h1>
+            <p class="my-6 text-black2">
+              Welcome to the Complete frontend development bootcamp. This is one
+              of the most comprehensive <code>frontend bootcamp</code> available
+              online. So, if you are new to web development, thats great news
+              because starting from scratch is always easy.
+            </p>
+            <a href="/" class="btn">Join the course</a>
+          </div>
+          <div>
+            <img
+              src="assets/images/header.png"
+              alt="header"
+              class="mx-auto max-w-full lg:max-w-[450px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+@tailwind base; /* Included Tailwind base style */
+@tailwind components; /* Included @layer components */
+@tailwind utilities; /* Included Tailwind ultility classes */
+
+@layer base {
+  body {
+    @apply bg-white font-sans font-medium text-black1 antialiased;
+  }
+  code {
+    @apply font-semibold text-primary;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-18 md:py-16;
+  }
+  .container {
+    @apply mx-auto px-4;
+  }
+  .btn {
+    @apply inline-block rounded-full bg-primary py-3 px-6 font-semibold text-white hover:bg-secondary;
+  }
+}
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
